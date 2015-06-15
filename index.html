@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ted Park</title>
+  <meta charset='utf-8'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+  <script src='../src/okvideo.js'></script>
+  <script type="text/javascript">
+    $(function(){
+        $.okvideo({ source: 'https://www.youtube.com/watch?v=85m_G108JVg', 
+                    volume: 100, 
+                    loop: true,
+                    hd:true, 
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { console.log('onready') },
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering') },
+                    cued: function() { console.log('cued') },
+                 });
+    });
+  </script>
+  <style type="text/css">
+    body {
+      margin: 20px;
+    }
+    #container {
+		background: rgba(255, 255, 255, 0.3);
+		padding: 10px;
+		width:610px;
+		font-family:helvetica;
+		color: white;
+		font-size: 14px;
+	}
+    a{color:white;}
+	a:visited{color:white;}
+    h1 {
+      font-size: 72px;
+      line-height: 12px;
+      margin-left: 20px;
+      font-weight: bold;
+      font-style: italic;
+      display: inline-block;
+    }
+
+    pre {
+      border: 1px solid #ddd;
+      background: rgb(238,238,238);
+      background: rgba(238,238,238,0.5);
+      font-size: 12px;
+      padding: 5px 0 5px 10px;
+      display: inline-block;
+	  width: 600px;
+    }
+    pre#license {
+      width: auto;
+      margin: 0;
+      padding: 10px;
+    }
+    pre#methods {
+      width: auto;
+      padding: 10px;
+    }
+	th {
+	text-align:left;
+	}
+    pre a {
+      color: #00f;
+    }
+    p {
+      width: 100%;
+    }
+    header img {margin-top:10px;max-width:500px;height:50px;}
+    h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;font-family: Comic Sans MS, cursive;font-weight:100;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+  
+  </style>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55012852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+  <div id="header">
+  <p><a href="https://gum.co/tedraps"><header>
+          <img src="logo.png">
+        </header></a>
+      </div>
+</body>
+</html>
